@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
         };
         contactListView.setAdapter(firebaseAdapter);
         contactListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            // onItemClick method is called everytime a user clicks an item on the list
+            // onItemClick method is called every time a user clicks an item on the list
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Contact person = (Contact) firebaseAdapter.getItem(position);
